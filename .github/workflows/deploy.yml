@@ -12,7 +12,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       
-    - name: Deploy to SFTP
+    - name: Deploy to FTPS
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
@@ -20,7 +20,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./
         server-dir: /landingpage/diggimaker/
-        protocol: sftp
+        protocol: ftps
         exclude: |
           **/.git*
           **/.git*/**
