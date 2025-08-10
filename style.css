@@ -1,0 +1,27 @@
+.card {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.body, .content {
+    display: flex;
+    gap: 20px;
+}
+
+.body {
+    flex-direction: column;
+}
+
+.playground, .shop {
+    flex-grow: 1;
+}
+
+.shop-item-footer {
+    display: flex;
+}
