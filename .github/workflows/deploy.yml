@@ -20,7 +20,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./
         server-dir: /landingpage/diggimaker/
-        protocol: ftps
+        protocol: ftp
         exclude: |
           **/.git*
           **/.git*/**
